@@ -8,6 +8,7 @@ import { Button } from "./_components/ui/button";
 import Link from "next/link";
 import { ChevronRightIcon } from "lucide-react";
 import { PromoBanner } from "./_components/promo-banner";
+import { RestaurantList } from "./_components/restaurantList";
 
 const Home = async () => {
   const products = await db.product.findMany({
@@ -61,6 +62,24 @@ const Home = async () => {
           src="/banner-02.png"
           alt="A partir de R$ 17,90 em lanches"
         />
+      </div>
+      {/*RESTAURANTES RECOMENDADOS */}
+      <div className="space-y-4 pt-6">
+        <div className="flex items-center justify-between px-5">
+          <h2 className="font-semibold">Restaurantes Recomendados</h2>
+
+          <Button
+            variant="ghost"
+            className="h-fit p-0 text-primary hover:bg-transparent"
+            asChild
+          >
+            <Link href="/products/recommended">
+              Ver todos
+              <ChevronRightIcon size={16} />
+            </Link>
+          </Button>
+        </div>
+        <RestaurantList />
       </div>
     </>
   );
