@@ -15,7 +15,7 @@ const RestaurantItem = ({ restaurant, className }: IRestaurantItemProps) => {
   return (
     <Link
       className={cn("min-w-[266px] max-w-[266px]", className)}
-      href={`/restaurants/${restaurant.id}`}
+      href={`/restaurant/${restaurant.id}`}
     >
       <div className="w-full space-y-3">
         {/* IMAGEM */}

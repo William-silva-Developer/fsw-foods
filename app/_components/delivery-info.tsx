@@ -14,7 +14,7 @@ const DeliveryInfo = ({ restaurant }: DeliveryInfoProps) => {
         {/* CUSTO */}
         <div className="flex flex-col items-center">
           <div className="flex items-center gap-1 text-muted-foreground">
-            <span className="text-xs">Entrega</span>
+            <span className="text-xs">Valor da entrega</span>
             <BikeIcon size={14} />
           </div>
 
@@ -30,7 +30,7 @@ const DeliveryInfo = ({ restaurant }: DeliveryInfoProps) => {
         {/* TEMPO */}
         <div className="flex flex-col items-center">
           <div className="flex items-center gap-1 text-muted-foreground">
-            <span className="text-xs">Entrega</span>
+            <span className="text-xs">Tempo de entrega</span>
             <TimerIcon size={14} />
           </div>
 
